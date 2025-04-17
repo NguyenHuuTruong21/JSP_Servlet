@@ -32,3 +32,10 @@ CREATE TABLE follows (
     FOREIGN KEY (follower_id) REFERENCES users(id),
     FOREIGN KEY (following_id) REFERENCES users(id)
 );
+
+
+CREATE TABLE provinces (
+    idProvince INT AUTO_INCREMENT PRIMARY KEY,
+    nameProvince VARCHAR(100) NOT NULL,
+    note VARCHAR(50)
+);
